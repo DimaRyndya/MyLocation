@@ -157,6 +157,7 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="pDB-Hw-VG0" id="Azf-iZ-HPK"/>
                                     <outlet property="descriptionLabel" destination="gIM-Tm-4R1" id="y0z-gs-rJG"/>
+                                    <segue destination="ep7-Oc-o4n" kind="show" identifier="EditLocation" id="dNR-qi-Bwy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -492,6 +493,9 @@
             <point key="canvasLocation" x="876" y="2.2488755622188905"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dNR-qi-Bwy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
