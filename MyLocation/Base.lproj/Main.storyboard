@@ -216,6 +216,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="pl6-GH-6JL" id="tNy-TO-9rb"/>
+                        <segue destination="ep7-Oc-o4n" kind="show" identifier="EditLocation" id="HRD-Ot-BQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpq-MD-5GN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -564,7 +565,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dNR-qi-Bwy"/>
+        <segue reference="HRD-Ot-BQV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
