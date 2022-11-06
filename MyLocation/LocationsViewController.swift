@@ -40,14 +40,11 @@ class LocationsViewController: UITableViewController {
         } catch {
             fatalCoreDataError(error)
         }
-
     }
 
     deinit {
         fetchedResultsController.delegate = nil
     }
-
-
 
     // MARK: - Table View Delegates
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,6 +70,7 @@ class LocationsViewController: UITableViewController {
         if editingStyle == .delete {
             let location = fetchedResultsController.object(
                 at: indexPath)
+            location.removePhotoFile()
             managedObjectContext.delete(location)
             do {
                 try managedObjectContext.save()
